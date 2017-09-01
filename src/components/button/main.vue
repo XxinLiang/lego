@@ -1,11 +1,15 @@
 <template>
-    <button class="btn" :disabled="disabled" :class="[
-                type ? 'btn--' + type : '',
-                size ? 'btn--' + size : '',
-                {
-                    'btn--disabled': disabled
-                }
-            ]">
+    <button
+        class="btn"
+        :disabled="disabled"
+        :class="[
+            type ? 'btn--' + type : '',
+            size ? 'btn--' + size : '',
+            {
+                'btn--disabled': disabled
+            }
+        ]"
+    >
         <span>
             <slot></slot>
         </span>

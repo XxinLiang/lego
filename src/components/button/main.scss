@@ -16,6 +16,7 @@
     line-height: 1;
     cursor: pointer;
     user-select: none;
+    transition: all .15s ease;
     &--default {
         color: $font;
         background-color: #fff;
