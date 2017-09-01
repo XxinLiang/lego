@@ -26,3 +26,26 @@ $data_g: #73d948;
 $data_y: #ffbb33;
 $data_b: #4cc3ff;
 $data_p: #9966cc;
+
+
+@mixin opacity {
+    &-enter-active,
+    &-leave-active {
+        transition: opacity .15s ease;
+    }
+    &-enter,
+    &-leave-active {
+        opacity: 0;
+    }
+}
+
+@mixin scale {
+    &-enter-active,
+    &-leave-active {
+        transition: transform .15s ease;
+    }
+    &-enter,
+    &-leave-active {
+        transform: scale(.8);
+    }
+}

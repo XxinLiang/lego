@@ -1,7 +1,8 @@
 var path = require('path')
 const {join} = require('path')
-const merge = require('webpack-merge')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+var projectRoot = path.resolve(__dirname, '../')
+var utils = require('./utils')
 
 const resolve = dir => join(__dirname, '..', dir)
 
@@ -11,7 +12,7 @@ module.exports = {
     },
     devtool: 'false',
     output: {
-        path: resolve('dist'),
+        path: resolve('./'),
         publicPath: '/',
         filename: 'index.js',
         libraryTarget: 'umd'
@@ -87,6 +88,6 @@ module.exports = {
     },
     vue: {
         loaders: utils.cssLoaders()
-    }
+    },
     plugins: [new CleanWebpackPlugin(['dist'], {root: resolve('./')})]
 }

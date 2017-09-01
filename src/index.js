@@ -1,7 +1,9 @@
 import Button from 'c/button/index'
+import Input from 'c/input/index'
 
 const components = [
-    Button
+    Button,
+    Input
 ]
 
 function install(Vue) {
@@ -11,5 +13,6 @@ function install(Vue) {
 
 export default {
     install,
-    Button
+    Button,
+    Input
 }
