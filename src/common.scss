@@ -27,6 +27,14 @@ $data_y: #ffbb33;
 $data_b: #4cc3ff;
 $data_p: #9966cc;
 
+@font-face {
+  font-family: 'lg__icon';  /* project id 404639 */
+  src: url('//at.alicdn.com/t/font_404639_w8tvqh3vzgmbo6r.eot');
+  src: url('//at.alicdn.com/t/font_404639_w8tvqh3vzgmbo6r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_404639_w8tvqh3vzgmbo6r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_404639_w8tvqh3vzgmbo6r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_404639_w8tvqh3vzgmbo6r.svg#lg__icon') format('svg');
+}
 
 @mixin opacity {
     &-enter-active,

@@ -1,7 +1,6 @@
 <template>
-    <input
-        type="text"
-        class="input"
+    <textarea
+        class="textarea"
         :id="id"
         :disabled="disabled"
         :placeholder="placeholder"
@@ -9,22 +8,31 @@
             width: width + 'px',
             height: height + 'px'
         }"
-    />
+    >
+    </textarea>
 </template>
 
 <script>
     export default {
-        name: 'LgInput',
+        name: 'LgTextarea',
         props: {
+            type: {
+                type: String,
+                default: 'text'
+            },
+            size: {
+                type: String,
+                default: 'lg'
+            },
             id: String,
             disabled: Boolean,
             width: {
                 type: Number,
-                default: 260
+                default: 460
             },
             height: {
                 type: Number,
-                default: 30
+                default: 150
             },
             placeholder: String
         }
@@ -34,14 +42,16 @@
 <style lang="scss" scoped>
 @import "../../common.scss";
 
-.input {
+.textarea {
     display: inline-block;
     box-sizing: border-box;
     padding: 0 9px;
-    color: #333;
     font-size: 12px;
+    color: #333;
+    line-height: 24px;
     border: 1px solid $border;
     transition: all .15s ease;
+    resize: none;
     outline: none;
     &:focus {
         border-color: $main;

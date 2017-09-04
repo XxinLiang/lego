@@ -1,10 +1,12 @@
 import Button from 'c/button/index'
 import Input from 'c/input/index'
+import Textarea from 'c/textarea/index'
 import Switch from 'c/switch/index'
 
 const components = [
     Button,
     Input,
+    Textarea,
     Switch
 ]
 
@@ -17,5 +19,6 @@ export default {
     install,
     Button,
     Input,
+    Textarea,
     Switch
 }
